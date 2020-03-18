@@ -1,6 +1,6 @@
 package day06;
 
-import java.awt.Label;
+//import java.awt.Label;
 import java.util.*;
 public class Ex10 {
 
