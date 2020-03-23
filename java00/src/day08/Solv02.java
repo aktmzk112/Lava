@@ -9,8 +9,11 @@ public class Solv02 {
 	2차 배열로 만들어서 
 	5명의 점수를 배열로 만드시요 
  */
+	
+	
 	public static void main(String[] args) {
-		
+	
+		char a = '가';
 		int[][] num = new int[5][5];
 		String[] str = new String[] {"국어","영어","수학","물리","역사","총점","평균"};
 		String[] str2 = new String[] {"학생1","학생2","학생3","학생4","학생5"};
