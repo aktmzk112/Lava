@@ -13,7 +13,7 @@ public class Hw02 {
 				no1[i + i][j] = num1++;
 
 			}
-
+ 
 		}
 // 짝수줄 출력
 		for (int i = 0; i < no1.length; i++) {
