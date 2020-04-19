@@ -75,12 +75,10 @@ JDBC
 						1. execute(String sql)
 							==> 잘의 명령을 실행한 후 JDBC에게 보고하지 않는다.
 								반환값은 boolean 인데
-								질의명령을 실행결과가 있는지 여부를 알려준다.
-								(즉 ResultSet이 있는지 없는지를 반환해주는것)
+								질의명령을 실행여부를 알려주는것이 아니고 
+								질의명령의 전달여부만 알려주는 것 
 		
-								예 ]
-									SELECT * FROM emp; ==> true
-									INSERT INTO .... 결과값이 없으므로 ==> false									
+								질의의 실행여부와는 전혀 상관없다.
 								
 							주로 실행여부에 관계없는 명령에 사용 
 								CREATE, INSERT, ... 에 주로 사용

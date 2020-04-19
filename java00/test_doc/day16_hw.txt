@@ -1,0 +1,47 @@
+숙제 1]
+	Calendar 클래스의 
+		1. set() : 본인이 원하는 값으로 날짜와 시간을 설정 하는 함수 
+			사용 방법 ] 
+				Calendar cal = Calendar.getInstace();
+				cal.set(int field, int value) 
+				cal.set(cal.YEAE, 2010);
+				==> 년도를 받아온 년도가 아닌 2010년으로 설정 한다.
+				cal.set(2001,11,23)
+				==> 날짜를 2001년 11월 23일로 변경한다
+				
+		2. getTimeInMillis() : 해당 달의 시간값을 밀리초 단위로 보여줍니다
+			사용 방법]
+				Calendar cal = Calendar.getInstace(); 
+				cal.getTimeINMillis();
+		3. getActualMaximum() : 해당 달의 마지막일을 반환해준다.
+			사용 방법]
+				Calendar cal = Calendar.getInstace();
+				
+				cal.getActualMaximum(cal.DAY_OF_MONTH);
+		
+		4. add() : 현재 날짜에서 더나거나 뺀 날짜를 반환해준다
+			단점 ]
+				증가시키는 일수가 넘어가면 자동으로 달수가 올란간다.
+			사용 방법 ]
+				Calendar cal = Calendar.getInstace();
+				cal.add(Calendar.DATE, 1);
+				==> 현재 날짜에서 1일 더한 날짜를 반환해준다.
+	
+		5. roll() : add 함수처럼 해당 필드를 증감 시키지만 add()랑은 다르게 일수가 넘어간다고해서 달수는 변경되지 않는다.
+					즉, 일수가 최대일수를넘어가면 MONTH필드는 그대로 있고 DAY필드값만 다시 1일부터 시작한다
+									
+		6. after() :  after() 메소드는 현재 Calendar 인스턴스가 전달된 객체가 나타내는 시간보다 나중인지를 판단합니다.
+				==> cal(현재시간).after(비교할시간)
+				==> 현재시간이랑 비교할시간이랑 비교하여 현재시간보다 과거의 시간이면 true를 반환
+				==> 현재시간보다 미래의 시간이면 false를 반환
+				
+		7. before() : before() 메소드는 현재 Calendar 인스턴스가 전달된 객체가 나타내는 시간보다 앞서는지를 판단
+				==> cal(현재시간).before(비교할시간) 
+				==> 현재 시간이랑 비교할시간을 비교하여 비교할 시간이 미래의 시간이면 true 그렇지 안으면 false를 반환
+	를 의미와 사용법을 공부 하세요!
+	
+숙제 2]
+	
+	Vactor , ArrayList의 함수들의 10개정도 의미와 사용법을 공부해오세요...!
+	
+
